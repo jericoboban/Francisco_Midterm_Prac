@@ -1,60 +1,25 @@
- 1. Recursive Genre Display
-Displays a nested associative array of movie genres and titles using a **recursive function**.
+# Library Management Project (PHP)
 
-📂 Data Structure
-php
-$movies = [
-    "Action" => ["Havoc", "John Wick"],
-    "Superhero" => ["Iron Man", "Spider-Man: No Way Home"],
-    "Adventure" => ["Jurassic Park", "Pirates of the Caribbean"]
-    ],
-    "Drama" => ["Night Always Comes", "Dead Poets Society"],
-    "Crime" => ["The Godfather", "The Irishman"],
-    "Romance" => ["Titanic", "The Notebook"]
-    ]
-];
+## Project Purpose
+This project simulates a simple library system using PHP data structures and algorithms. It demonstrates three core programming concepts:
 
-🗃️ 2. Hash Table Data Retrieval
-Uses a PHP associative array to act as a hash table for quick movie data lookup.
+1. **Recursive Directory Display**  
+   - Uses nested arrays to represent book categories.
+   - Recursively traverses and displays categories and books.
 
-php
-📂 Data Structure
-$movieDatabase = [
-    "Iron Man" => ["Director" => "Jon Favreau", "Released" => 2008, "Genre" => "Superhero Action"],
-    "The Godfather" => ["Director" => "Francis Ford Coppola", "Released" => 1972, "Genre" => "Crime Drama"],
-    "Titanic" => ["Director" => "James Cameron", "Released" => 1997, "Genre" => "Romantic Drama"]
-];
+2. **Hash Table for Book Details**  
+   - Stores book information (author, year, genre) using associative arrays.
+   - Allows looking up details for a specific book.
 
+3. **Binary Search Tree (BST) for Book Titles**  
+   - Stores book titles alphabetically.
+   - Supports quick searching and alphabetical listing of books.
 
-🌳 3. Binary Search Tree (BST) Operations
-Implements a binary search tree to store movie titles alphabetically and allows searching through the dataset.
+The final **Integration Challenge** combines all three parts into one interactive PHP script.
 
-📂 Classes
-Node
-Represents a single tree node with:
-$data
-$left
-$right
-
-BinarySearchTree
-Supports:
-Insertion
-In-order traversal (alphabetical output)
-Search
-
-⚙️ Usage Example
-$bst = new BinarySearchTree();
-$movieTitles = ["Iron Man", "Jurassic Park", "Pirates of the Caribbean", "Spider-Man: No Way Home", "The Godfather", "The Irishman", "The Notebook", "Titanic"];
-
-foreach ($movieTitles as $title) {
-    $bst->insert($title);
-}
-$bst->inorderTraversal($bst->root);
-
-
-
-
-
-
+## How to Run
+1. **Display Library**: Run the script to see categories and books recursively.
+2. **View Book Details**: Click a book (or provide its name) to see author, year, and genre.
+3. **Search Alphabetically**: Use the BST to find a book or list all titles alphabetically.
 
 
