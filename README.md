@@ -4,13 +4,13 @@ Displays a nested associative array of movie genres and titles using a **recursi
 📂 Data Structure
 php
 $movies = [
-    "Action" => [
-        "Superhero" => ["Iron Man", "Spider-Man: No Way Home"],
-        "Adventure" => ["Jurassic Park", "Pirates of the Caribbean"]
+    "Action" => ["Havoc", "John Wick"],
+    "Superhero" => ["Iron Man", "Spider-Man: No Way Home"],
+    "Adventure" => ["Jurassic Park", "Pirates of the Caribbean"]
     ],
-    "Drama" => [
-        "Crime" => ["The Godfather", "The Irishman"],
-        "Romance" => ["Titanic", "The Notebook"]
+    "Drama" => ["Night Always Comes", "Dead Poets Society"],
+    "Crime" => ["The Godfather", "The Irishman"],
+    "Romance" => ["Titanic", "The Notebook"]
     ]
 ];
 
